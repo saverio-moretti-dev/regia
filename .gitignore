@@ -1,0 +1,26 @@
+# dati della Regia (restano sul computer)
+plancia/coda.jsonl
+plancia/risposte.jsonl
+plancia/attesa.jsonl
+plancia/richieste.json
+plancia/insospeso.json
+plancia/permesso.json
+plancia/pausa.json
+plancia/fissati.json
+plancia/sup-ascolto.json
+plancia/opzioni.json
+plancia/righe-agenti.json
+plancia/limiti-emessi.json
+plancia/promemoria-emessi.json
+plancia/sessioni-pausa.json
+plancia/.cache-token.json
+plancia/allegati/
+plancia/app-mac/build/
+__pycache__/
+*.pyc
+.DS_Store
+plancia/locale.json
+plancia/elementi.json
+plancia/elementi/
+plancia/verifiche/
+plancia/guardiano.json

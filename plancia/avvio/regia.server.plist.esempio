@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Esempio: sostituire PYTHON (es. /opt/homebrew/bin/python3), PERCORSO_REPO (cartella della repo), CASA (cartella utente). -->
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>local.regia.server</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>PYTHON</string>
+    <string>PERCORSO_REPO/plancia/server.py</string>
+    <string>8765</string>
+  </array>
+  <key>WorkingDirectory</key><string>PERCORSO_REPO</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key><string>CASA/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    <key>PYTHONUNBUFFERED</key><string>1</string>
+  </dict>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+  <key>ThrottleInterval</key><integer>10</integer>
+  <!-- Standard, non Background: in Background macOS rallenta CPU e disco di molte volte -->
+  <key>ProcessType</key><string>Standard</string>
+  <key>StandardOutPath</key><string>CASA/Library/Logs/regia.log</string>
+  <key>StandardErrorPath</key><string>CASA/Library/Logs/regia.log</string>
+</dict>
+</plist>
